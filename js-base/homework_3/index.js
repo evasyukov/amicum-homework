@@ -6,14 +6,14 @@
 2 – четное число
 3 – нечетное число  */
 
-// for (let i = 0; i < 10; i++) {
-//   if (i === 0) {
-//     console.log(i, "- ноль")
-//   }
-//   i % 2 === 0
-//     ? console.log(i, "- четное число")
-//     : console.log(i, "- нечетное число")
-// }
+for (let i = 0; i < 10; i++) {
+  if (i === 0) {
+    console.log(i, "- ноль")
+  }
+  i % 2 === 0
+    ? console.log(i, "- четное число")
+    : console.log(i, "- нечетное число")
+}
 
 /* 2. Выведите в консоль значения, указанные рядом с комментариями: */
 const post = {
@@ -40,10 +40,10 @@ const post = {
     },
   ],
 }
-// console.log(post.author)
-// console.log(post.comments[0].rating.dislikes)
-// console.log(post.comments[1].userId)
-// console.log(post.comments[1].text)
+console.log(post.author)
+console.log(post.comments[0].rating.dislikes)
+console.log(post.comments[1].userId)
+console.log(post.comments[1].text)
 
 /* 4. Перед вами находится массив с продуктами в интернет-магазине. Вам нужно:
 1. Получить все товары, у которых есть фотографии, можете использовать метод filter https://mzl.la/2qROQkT
@@ -74,12 +74,12 @@ const products2 = [
   },
 ]
 
-// const productsWithPhotos = products2.filter(
-//   (product) => product.photos?.length > 0
-// )
-// console.log(productsWithPhotos)
-// productsWithPhotos.sort((a, b) => a.price - b.price)
-// console.log(productsWithPhotos)
+const productsWithPhotos = products2.filter(
+  (product) => product.photos?.length > 0
+)
+console.log(productsWithPhotos)
+productsWithPhotos.sort((a, b) => a.price - b.price)
+console.log(productsWithPhotos)
 
 /* #5
 (По желанию, т.к. такая особенность практически не используется) Вывести с помощью цикла
@@ -90,7 +90,7 @@ for(…){ здесь пусто}
 Помните, что в первом, втором и третьем раздела цикла можно не только писать условия,
 или увеличивать счетчик например на 1, допустимы любые выражения, например вызовы функций. */
 
-// for (let i = 0; i <= 9; console.log(i++));
+for (let i = 0; i <= 9; console.log(i++));
 
 /* #6 Нарисовать горку с помощью console.log (используя цикл for), как показано на рисунке,
 только у вашей горки должно быть 20 рядов, а не 5:
@@ -100,6 +100,6 @@ xxx
 xxxx
 xxxxx  */
 
-// for (let i = 0; i <= 20; i++) {
-//   console.log('x'.repeat(i));
-// }
+for (let i = 0; i <= 20; i++) {
+  console.log('x'.repeat(i));
+}
